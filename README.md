@@ -17,7 +17,7 @@ context.fillStyle = rgb(128, 0, 255);
 
 
 ```js
-var rgb = require('color-style');
+var rgb = require('color-style').rgb;
 var hsl = require('color-style').hsl;
 
 //... somewhere in your render loop
