@@ -2,7 +2,7 @@
 
 # color-style
 
-[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
 Quickly get an `rgba()` or `hsla()` string for CSS and 2D context, without string concatenation.
 
