@@ -4,7 +4,12 @@
 
 [![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
 
-A quick way to avoid string concatenation when setting CSS or HTML5 Canvas context colors.
+Quickly get an `rgba()` or `hsla()` string for CSS and 2D context, without string concatenation.
+
+```js
+var rgb = require('color-style');
+context.fillStyle = rgb(128, 0, 255);
+```
 
 ## Usage
 
@@ -25,16 +30,9 @@ context.fillStyle = rgb(); // "rgba(0,0,0,1.0)"
 context.fillStyle = hsl(230, 50, 20, 0.5); // "hsla(230,50%,20%,0.5)"
 ```
 
-### `colorStyle(r, g, b, a)`
-
-Returns an `"rgba(..)"` string. This function is just an alias for `colorStyle.rgb`.
-
-### `colorStyle.rgb(r, g, b[, a])`
-### `colorStyle.hsl(h, s, l[, a])`
-
 Color components default to 0 if not specified; alpha will default to 1.0.
 
-You can also pass an array or string:
+You can also pass an array or string to all methods:
 
 ```
 colorStyle([r, g, b], a);
@@ -42,8 +40,20 @@ colorStyle([r, g, b, a]);
 colorStyle('#ddffff');
 ```
 
-### `colorStyle.rgba(r, g, b, a)`
-### `colorStyle.hsla(h, s, l, a)`
+## methods
+
+`colorStyle(r, g, b, a)`
+`colorStyle.rgb(r, g, b[, a])`
+
+Returns an `"rgba(..)"` string. The main function `colorStyle()` is just an alias for `colorStyle.rgb()`.
+
+
+`colorStyle.hsl(h, s, l[, a])`
+
+Returns a `"hsla(..)"` string.
+
+`colorStyle.rgba(r, g, b, a)`
+`colorStyle.hsla(h, s, l, a)`
 
 Included for completeness; just aliases for the above functions.
 
