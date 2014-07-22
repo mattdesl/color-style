@@ -42,18 +42,18 @@ colorStyle('#ddffff');
 
 ## methods
 
-`colorStyle(r, g, b, a)`
-`colorStyle.rgb(r, g, b[, a])`
+#### `colorStyle(r, g, b, a)`
+#### `colorStyle.rgb(r, g, b[, a])`
 
 Returns an `"rgba(..)"` string. The main function `colorStyle()` is just an alias for `colorStyle.rgb()`.
 
 
-`colorStyle.hsl(h, s, l[, a])`
+#### `colorStyle.hsl(h, s, l[, a])`
 
 Returns a `"hsla(..)"` string.
 
-`colorStyle.rgba(r, g, b, a)`
-`colorStyle.hsla(h, s, l, a)`
+#### `colorStyle.rgba(r, g, b, a)`
+#### `colorStyle.hsla(h, s, l, a)`
 
 Included for completeness; just aliases for the above functions.
 
