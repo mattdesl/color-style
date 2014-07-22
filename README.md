@@ -42,8 +42,7 @@ colorStyle('#ddffff');
 
 ## methods
 
-#### `colorStyle(r, g, b, a)`
-#### `colorStyle.rgb(r, g, b[, a])`
+#### `colorStyle(r, g, b, a)` or `colorStyle.rgb(r, g, b[, a])`
 
 Returns an `"rgba(..)"` string. The main function `colorStyle()` is just an alias for `colorStyle.rgb()`.
 
