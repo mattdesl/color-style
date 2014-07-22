@@ -11,10 +11,7 @@ function getString(format, r, g, b, a) {
 	if (typeof r === 'string') {
 		return r;
 	}
-	//first argument is array, assume format:
-	//	rgba([r, g, b], a)
-	//	rgba([r, g, b, a])
-	//	rgba([r, g, b])
+	//first argument is array
 	else if (Array.isArray(r)) {
 		var array = r;
 		var second = g;
@@ -25,10 +22,7 @@ function getString(format, r, g, b, a) {
 		//otherwise assume it's the second parameter
 		a = typeof array[3] === 'number' ? array[3] : second;
 	}
-	//first argument is a number or undefined, assume format:
-	//	rgba(r, g, b, a)
-	//	rgba(r, g, b)
-	//	rgba()  --> black
+	//otherwise, first argument is a number or undefined...
 	
 	//default values
 	a = typeof a === 'number' ? a : 1.0;
