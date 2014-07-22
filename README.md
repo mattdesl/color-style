@@ -34,7 +34,7 @@ Color components default to 0 if not specified; alpha will default to 1.0.
 
 You can also pass an array or string to all methods:
 
-```
+```js
 colorStyle([r, g, b], a);
 colorStyle([r, g, b, a]);
 colorStyle('#ddffff');
@@ -42,12 +42,15 @@ colorStyle('#ddffff');
 
 ## methods
 
-#### `colorStyle(r, g, b, a)` or `colorStyle.rgb(r, g, b[, a])`
+#### `colorStyle(r, g, b, a)`
 
-Returns an `"rgba(..)"` string. The main function `colorStyle()` is just an alias for `colorStyle.rgb()`.
+The same as `colorStyle.rgb` below.
 
+#### `colorStyle.rgb(r, g, b, a)`
 
-#### `colorStyle.hsl(h, s, l[, a])`
+Returns a `"rgba(..)"` string. This is also exported as the main function.
+
+#### `colorStyle.hsl(h, s, l, a)`
 
 Returns a `"hsla(..)"` string.
 
