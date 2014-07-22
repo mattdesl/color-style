@@ -1,0 +1,53 @@
+{
+  "name": "color-style",
+  "version": "1.0.0",
+  "description": "avoid string concats when making rgba() colors",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Matt DesLauriers <dave.des@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "~2.13.2"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "testling": {
+    "files": "test.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/color-style.git"
+  },
+  "homepage": "https://github.com/mattdesl/color-style",
+  "bugs": {
+    "url": "https://github.com/mattdesl/color-style/issues"
+  },
+  "keywords": [
+    "color",
+    "css",
+    "string",
+    "rgb",
+    "rgba",
+    "hsl",
+    "hsla",
+    "style",
+    "fillContext",
+    "strokeContext",
+    "fill",
+    "stroke",
+    "context",
+    "context2d",
+    "2d"
+  ]
+}
